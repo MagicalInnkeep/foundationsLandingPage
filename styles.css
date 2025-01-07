@@ -1,0 +1,88 @@
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vp;
+}
+
+.header,
+.main,
+.footer{
+    background-color: #1F2937;
+}
+
+.header,
+.main {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcomeImg {
+    height: 200px;
+}
+
+.header,
+.footer{
+    min-height: 40px;
+}
+
+.main,
+.examples
+.quotes,
+.invite{
+    flex:1;
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.descr {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.quote,
+.quotee{
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quotee {
+    font-weight: bold;
+}
+
+button,
+.invite {
+    background-color: #3882F6;
+    color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
