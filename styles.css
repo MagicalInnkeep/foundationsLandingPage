@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 100vp;
+    margin: 0;
 }
 
 .header,
@@ -11,28 +12,61 @@ body {
     background-color: #1F2937;
 }
 
-.header,
-.main {
-    flex-shrink: 0;
+.welcomeImg {
+    height: 250px;
+}
+
+.header .centerBox,
+.footer .centerBox{
+    height: 35px;
+    padding-bottom: 0;
+}
+
+.centerBox
+{
+    max-width: 600px;
+    flex: 1;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 
-.welcomeImg {
-    height: 200px;
+.main .centerBox{
+    align-items: center;
 }
 
 .header,
+.main,
+.examples,
+.quotes,
+.invite,
 .footer{
-    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.examples{
+    display: flex;
+    flex-direction: column;
 }
 
-.main,
-.examples
-.quotes,
-.invite{
-    flex:1;
+.examples .centerBox{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.example {
+    width: 125px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.exampleImg{
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    width: 125px;
+    height: 125px;
 }
 
 h1 {
@@ -49,13 +83,27 @@ h1 {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.quotes .centerBox
+{
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.quotee{
+    text-align: right;
+    font-weight: bold;
 }
 
 .quote,
 .quotee{
-    background-color: #E5E7EB;
-    font-size: 36px;
+
+    font-size: 24px;
     color: #1F2937;
+    margin: 0;
 }
 
 .quote {
@@ -63,14 +111,32 @@ h1 {
     font-weight: lighter;
 }
 
-.quotee {
-    font-weight: bold;
+.quotes {
+    background-color: #E5E7EB;
 }
 
-button,
-.invite {
+button{
     background-color: #3882F6;
     color: #E5E7EB;
+    border-radius: 5px;
+    border: none;
+    width: 75px;
+}
+
+.joinbis {
+    border: 1px solid #E5E7EB;
+}
+
+.invite .centerBox{
+    background-color: #3882F6;
+    color: #E5E7EB;
+    margin: 60px;
+    padding: 15px 25px;
+    align-items: center;
+}
+
+button {
+    height: 20px;
 }
 
 a {
@@ -81,8 +147,15 @@ a {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 5px;
+    gap: 15px;
     margin: 0;
     padding: 0;
+    align-items: center;
   }
 
+.footer .centerBox{
+    font-size: 12px;
+    color: #F9FAF8;
+    align-items: center;
+    justify-content: center;
+}
